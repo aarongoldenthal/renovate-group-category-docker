@@ -1,0 +1,4 @@
+job1:
+  image: node:18.16.1-bullseye-slim
+  script:
+    - echo test
