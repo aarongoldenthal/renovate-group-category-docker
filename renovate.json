@@ -1,12 +1,23 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "docker:disableMajor"],
+  "extends": ["config:recommended"],
+  "ignorePresets": [":dependencyDashboard", ":prHourlyLimit2"],
+  "npm": {
+    "packageRules": [
+      {
+        "extends": ["monorepo:playwright"],
+        "matchUpdateTypes": ["digest", "patch", "minor", "major"],
+        "groupName": "playwright monorepo and image"
+      }
+    ]
+  },
   "packageRules": [
     {
-      "matchPackageNames": [
-        "registry.gitlab.com/gitlab-ci-utils/docker-puppeteer"
-      ],
-      "versioning": "regex:^node-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-(?<compatibility>.*)$"
+      "matchCategories": ["docker"],
+      "matchPackageNames": ["mcr.microsoft.com/playwright"],
+      "matchUpdateTypes": ["digest", "patch", "minor", "major"],
+      "groupName": "playwright monorepo and image"
     }
-  ]
+  ],
+  "timezone": "America/Chicago"
 }

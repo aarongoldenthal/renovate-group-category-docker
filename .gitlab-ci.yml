@@ -1,4 +1,4 @@
-job1:
-  image: registry.gitlab.com/gitlab-ci-utils/docker-puppeteer:node-18.16.0-bullseye-slim
+tests-ui:
+  image: mcr.microsoft.com/playwright:v1.36.0-jammy@sha256:3d3619bf5e622d264f519bffd3aa321d061bf420688eda8a5143da7884b36a6b
   script:
     - echo test

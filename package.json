@@ -1,0 +1,15 @@
+{
+  "name": "renovate-group-dockerfile-gitlab-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Aaron Goldenthal <aaron.goldenthal@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.36.1"
+  }
+}
