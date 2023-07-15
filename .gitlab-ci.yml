@@ -1,4 +1,4 @@
 tests-ui:
-  image: mcr.microsoft.com/playwright:v1.36.0-jammy@sha256:3d3619bf5e622d264f519bffd3aa321d061bf420688eda8a5143da7884b36a6b
+  image: mcr.microsoft.com/playwright:v1.36.1-jammy@sha256:b6b5b2e09b20f1946828dc66efde326f8130d250ec8e9c7af91d43cfa9a04402
   script:
     - echo test
