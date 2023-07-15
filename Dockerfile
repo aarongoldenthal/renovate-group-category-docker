@@ -1,0 +1,1 @@
+FROM mcr.microsoft.com/playwright:v1.36.0-jammy@sha256:3d3619bf5e622d264f519bffd3aa321d061bf420688eda8a5143da7884b36a6b
