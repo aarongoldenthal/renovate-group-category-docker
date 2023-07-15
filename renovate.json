@@ -4,7 +4,7 @@
   "ignorePresets": [":dependencyDashboard", ":prHourlyLimit2"],
   "packageRules": [
     {
-      "matchCategories": ["docker"],
+      "matchCategories": ["ci", "docker"],
       "matchPackageNames": ["mcr.microsoft.com/playwright"],
       "matchUpdateTypes": ["digest", "patch", "minor", "major"],
       "groupName": "playwright monorepo and image"
