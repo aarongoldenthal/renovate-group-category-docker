@@ -2,15 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
   "ignorePresets": [":dependencyDashboard", ":prHourlyLimit2"],
-  "npm": {
-    "packageRules": [
-      {
-        "extends": ["monorepo:playwright"],
-        "matchUpdateTypes": ["digest", "patch", "minor", "major"],
-        "groupName": "playwright monorepo and image"
-      }
-    ]
-  },
   "packageRules": [
     {
       "matchCategories": ["docker"],
